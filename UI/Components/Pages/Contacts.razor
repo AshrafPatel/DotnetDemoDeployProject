@@ -1,0 +1,104 @@
+﻿@page "/contacts"
+@using global::Contacts.DTO
+@inject ContactsApiClient Api
+@rendermode InteractiveServer
+
+
+<h3>Contacts</h3>
+
+@if (contacts == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <input class="form-control mb-3"
+           placeholder="Search..."
+           value="@searchTerm"
+           @oninput="OnSearchName" />
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in contacts)
+            {
+                <tr>
+                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Name input /></td>
+                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Email input /></td>
+                    <td><button id="@c.Id" class="btn btn-warning" @onclick="@(() => UpdateContact(c))">@(c.IsEditing ? "Update" : "Edit")</button></td>
+                    <td><button id="@c.Id" class="btn btn-danger"  @onclick="@(() => DeleteContact(c.Id))">Delete</button></td>
+                </tr>
+            }
+        </tbody>
+     </table>
+
+     <form class="mt-4">
+        <h4>Add New Contact</h4>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" @bind="contactToAdd.Name" />
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" @bind="contactToAdd.Email" />
+        </div>
+        <button type="button" class="btn btn-primary" @onclick="@(() => AddContact(contactToAdd))">Add Contact
+        </button>
+      </form>
+}
+
+@code {
+    List<ContactDto>? contacts;
+    string searchTerm = string.Empty;
+    ContactDto contactToAdd = new ContactDto();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        contacts = await Api.GetAllAsync();
+    }
+
+    private async Task RefreshContacts()
+    {
+        contacts = await Api.GetAllAsync();
+    }
+
+    private async Task OnSearchName(ChangeEventArgs e)
+    {
+        Console.WriteLine($"OnInput fired: {searchTerm}");
+        searchTerm = e.Value?.ToString() ?? "";
+        contacts = await Api.SearchAsync(searchTerm);
+    }
+
+    private async Task UpdateContact(ContactDto contactDto)
+    {
+        if (contactDto.IsEditing)
+        {
+            await Api.UpdateAsync(contactDto);
+        }
+        contactDto.IsEditing = !contactDto.IsEditing;
+        await RefreshContacts();
+
+    }
+
+    private async Task DeleteContact(Guid id)
+    {
+        await Api.DeleteAsync(id);
+        await RefreshContacts();
+    }
+
+    private async Task AddContact(ContactDto contactDto)
+    {
+        await Api.CreateAsync(contactDto);
+        contactToAdd = new ContactDto();
+        await RefreshContacts();
+    }
+}

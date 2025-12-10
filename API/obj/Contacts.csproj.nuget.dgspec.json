@@ -1,0 +1,427 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj",
+        "projectName": "Contacts.Data",
+        "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj",
+        "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ashraf Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\Contacts.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\Contacts.DTO.csproj",
+        "projectName": "Contacts.DTO",
+        "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\Contacts.DTO.csproj",
+        "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ashraf Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj",
+        "projectName": "Contacts.Repositories",
+        "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ashraf Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj",
+        "projectName": "Contacts.Services",
+        "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj",
+        "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ashraf Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj"
+              },
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\Contacts.DTO.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.DTO\\Contacts.DTO.csproj"
+              },
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj",
+        "projectName": "Contacts",
+        "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj",
+        "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ashraf Patel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj"
+              },
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj"
+              },
+              "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.23.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.23.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
