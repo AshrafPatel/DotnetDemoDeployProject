@@ -104,10 +104,10 @@ C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net1
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.DF8C81C7.Up2Date
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.dll
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\refint\Contacts.UI.dll
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.pdb
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.genruntimeconfig.cache
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\ref\Contacts.UI.dll
-C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

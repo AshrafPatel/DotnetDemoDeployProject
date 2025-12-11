@@ -2,6 +2,7 @@
 @using global::Contacts.Shared.DTOs
 @inject ContactsApiClient Api
 @rendermode InteractiveServer
+@inject NavigationManager Nav
 
 
 <h3>Contacts</h3>
@@ -83,7 +84,12 @@ else
         Console.WriteLine("Update clicked");
         if (contactDto.IsEditing)
         {
-            await Api.UpdateAsync(contactDto);
+            bool success = await Api.UpdateAsync(contactDto);
+            if (!success)
+            {
+                Nav.NavigateTo("/error", forceLoad: true);
+                return;
+            }
         }
         contactDto.IsEditing = !contactDto.IsEditing;
     }
@@ -96,7 +102,12 @@ else
 
     private async Task AddContact(ContactDto contactDto)
     {
-        await Api.CreateAsync(contactDto);
+        bool success = await Api.CreateAsync(contactDto);
+        if (!success)
+        {
+            Nav.NavigateTo("/error", forceLoad: true);
+            return;
+        }
         contactToAdd = new ContactDto();
         await RefreshContacts();
     }

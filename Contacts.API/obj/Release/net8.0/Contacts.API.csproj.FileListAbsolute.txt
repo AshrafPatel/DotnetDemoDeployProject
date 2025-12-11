@@ -191,3 +191,5 @@ C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\obj\Release\n
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\obj\Release\net8.0\Contacts.API.pdb
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\obj\Release\net8.0\Contacts.API.genruntimeconfig.cache
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\obj\Release\net8.0\ref\Contacts.API.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\bin\Release\net8.0\Npgsql.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.API\bin\Release\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

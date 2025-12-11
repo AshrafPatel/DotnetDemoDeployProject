@@ -13,7 +13,21 @@ namespace Contacts.Infrastructure
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("ContactsDb");
-            services.AddDbContext<ContactDbContext>(options => options.UseSqlServer(connectionString));
+
+            // Detect provider by environment
+            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            if (env == "Development")
+            {
+                // Local development (SQL Server LocalDB)
+                services.AddDbContext<ContactDbContext>(options =>
+                    options.UseSqlServer(connectionString));
+            }
+            else
+            {
+                // Production (PostgreSQL on Neon.tech)
+                services.AddDbContext<ContactDbContext>(options =>
+                    options.UseNpgsql(connectionString));
+            }
 
             services.AddScoped<IContactRepository, ContactRepository>();
             return services;
