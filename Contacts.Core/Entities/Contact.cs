@@ -1,9 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Contacts.Core.Entities
 {
-    [Index(nameof(Email), IsUnique = true)]
     public class Contact
     {
         [Key]

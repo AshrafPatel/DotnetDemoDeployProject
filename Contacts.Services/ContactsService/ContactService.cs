@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using Microsoft.Extensions.Logging;
+using Contacts.Core.Entities;
+using Contacts.Core.Interfaces;
 
 namespace Contacts.Services.ContactsService
 {
@@ -17,19 +19,18 @@ namespace Contacts.Services.ContactsService
             _contactRepository = contactRepository ?? throw new ArgumentNullException(nameof(contactRepository));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
-        public async Task<bool> AddAsync(Contact contactDto)
+        public async Task<bool> AddAsync(Contact contact)
         {
             try
             {
                 _logger.LogInformation("Attempting to add a new contact.");
-                if (contactDto == null)
+                if (contact == null)
                 {
                     _logger.LogWarning("ContactDto provided is null.");
                     return false;
                 }
-                Contact contactToAdd = _mapper.Map<Contact>(contactDto);
-                await _contactRepository.AddAsync(contactToAdd);
-                _logger.LogInformation("Successfully added a new contact with ID {ContactId}.", contactToAdd.Id);
+                await _contactRepository.AddAsync(contact);
+                _logger.LogInformation("Successfully added a new contact with ID {ContactId}.", contact.Id);
                 return true;
             }
             catch (Exception ex)
@@ -66,19 +67,17 @@ namespace Contacts.Services.ContactsService
             }
         }
 
-        public async Task<List<ContactDto>> FindContactByName(string name)
+        public async Task<List<Contact>> FindContactByName(string name)
         {
-            List<ContactDto>? contactDtos = null;
+            List<Contact>? contacts = null;
             try
             {
                 _logger.LogInformation("Searching for contacts with name: {ContactName}.", name);
-                if (string.IsNullOrWhiteSpace(name)) return new List<ContactDto>();
+                if (string.IsNullOrWhiteSpace(name)) return new List<Contact>();
 
-                List<Contact> contacts = await _contactRepository.FindContactByName(name);
-                if (contacts == null || contacts.Count == 0) return new List<ContactDto>();
-
-                contactDtos = _mapper.Map<List<ContactDto>>(contacts);
-                return contactDtos;
+                List<Contact> contactToFind = await _contactRepository.FindContactByName(name);
+                if (contactToFind == null || contactToFind.Count == 0) return new List<Contact>();
+                return contactToFind;
             }
             catch (Exception ex)
             {
@@ -87,15 +86,14 @@ namespace Contacts.Services.ContactsService
             }
         }
 
-        public async Task<List<ContactDto>> GetAllContacts()
+        public async Task<List<Contact>> GetAllContacts()
         {
-            List<ContactDto>? contactDtos = null;
+            List<Contact>? contactDtos = null;
             try
             {
                 _logger.LogInformation("Retrieving all contacts.");
                 List<Contact> contacts = await _contactRepository.GetAllContacts();
-                contactDtos = _mapper.Map<List<ContactDto>>(contacts);
-                return contactDtos;
+                return contacts;
             }
             catch (Exception ex)
             {
@@ -104,19 +102,17 @@ namespace Contacts.Services.ContactsService
             }
         }
 
-        public async Task<ContactDto?> GetContactAsync(Guid id)
+        public async Task<Contact?> GetContactAsync(Guid id)
         {
-            ContactDto? contactDto = null;
+            Contact? contactToGet = null;
             try
             {
                 _logger.LogInformation("Retrieving contact with ID {ContactId}.", id);
                 if (id == Guid.Empty) throw new ArgumentException("Invalid contact ID.", nameof(id));
 
-                Contact? contact = await _contactRepository.GetContactAsync(id);
-                if (contact == null) throw new KeyNotFoundException($"Contact with id {id} not found.");
-
-                contactDto = _mapper.Map<ContactDto>(contact);
-                return contactDto;
+                contactToGet = await _contactRepository.GetContactAsync(id);
+                if (contactToGet == null) throw new KeyNotFoundException($"Contact with id {id} not found.");
+                return contactToGet;
             }
             catch (Exception ex)
             {
@@ -125,19 +121,17 @@ namespace Contacts.Services.ContactsService
             }
         }
 
-        public async Task<ContactDto?> UpdateAsync(Guid id, ContactDto contactDto)
+        public async Task<Contact?> UpdateAsync(Guid id, Contact contactDto)
         {
-            ContactDto? updateContactDto = null;
+            Contact? updateContactDto = null;
             try
             {
                 _logger.LogInformation("Attempting to update contact with ID {ContactId}.", id);
                 if (id == Guid.Empty) throw new ArgumentException("Invalid contact ID.", nameof(id));
                 if (contactDto == null) throw new ArgumentNullException(nameof(contactDto));
 
-                Contact contact = _mapper.Map<Contact>(contactDto);
-                Contact? updatedContact = await _contactRepository.UpdateAsync(id, contact);
+                Contact? updatedContact = await _contactRepository.UpdateAsync(id, contactDto);
 
-                updateContactDto = _mapper.Map<ContactDto>(updatedContact);
                 return updateContactDto;
             }
             catch (Exception ex)

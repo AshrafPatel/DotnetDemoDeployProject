@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Contacts.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Contacts.Infrastructure.Data
 {

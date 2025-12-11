@@ -1,4 +1,5 @@
-﻿using Contacts.Services.ContactsService;
+﻿using AutoMapper;
+using Contacts.Services.ContactsService;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 

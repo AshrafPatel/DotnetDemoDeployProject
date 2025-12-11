@@ -1,9 +1,9 @@
-﻿using System;
+﻿using AutoMapper;
+using Contacts.Core.Entities;
+using Contacts.Shared.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using AutoMapper;
-using Contacts.Data.Models;
-using Contacts.DTO;
 
 namespace Contacts.Services.Profiles
 {
