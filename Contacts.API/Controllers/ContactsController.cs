@@ -1,6 +1,4 @@
-﻿using Contacts.Data.Models;
-using Contacts.DTO;
-using Contacts.Services.Contacts;
+﻿using Contacts.Services.ContactsService;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 
@@ -12,11 +10,13 @@ namespace Contacts.Controllers.Contacts
     {
         private readonly IContactService _contactService;
         private readonly ILogger<ContactsController> _logger;
+        private readonly IMapper _mapper;
 
-        public ContactsController(IContactService contactService, ILogger<ContactsController> logger)
+        public ContactsController(IContactService contactService, ILogger<ContactsController> logger, IMapper mapper)
         {
             _contactService = contactService ?? throw new ArgumentNullException(nameof(contactService));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet]

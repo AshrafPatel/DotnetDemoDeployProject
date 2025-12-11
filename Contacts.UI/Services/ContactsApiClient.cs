@@ -1,4 +1,4 @@
-﻿using Contacts.DTO;
+﻿using Contacts.Shared.DTOs;
 
 namespace Contacts.UI.Services
 {

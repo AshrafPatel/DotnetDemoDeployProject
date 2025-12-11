@@ -2,23 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "AutoMapper/13.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "Microsoft.Extensions.Options": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/AutoMapper.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -629,7 +612,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.7.0": {
+      "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2121,55 +2104,9 @@
           }
         }
       },
-      "Contacts.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Contacts.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contacts.Data.dll": {}
-        }
-      },
-      "Contacts.DTO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/Contacts.DTO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contacts.DTO.dll": {}
-        }
-      },
-      "Contacts.Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Contacts.Data": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Contacts.Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contacts.Repositories.dll": {}
-        }
-      },
       "Contacts.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "AutoMapper": "13.0.0",
-          "Contacts.DTO": "1.0.0",
-          "Contacts.Data": "1.0.0",
-          "Contacts.Repositories": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
-        },
         "compile": {
           "bin/placeholder/Contacts.Services.dll": {}
         },
@@ -2180,21 +2117,6 @@
     }
   },
   "libraries": {
-    "AutoMapper/13.0.0": {
-      "sha512": "BFMiZ5kNqbN1ircgFE7qtXWzGjGf1UnEPo39dWlvaPFVep75cikyjFCFssthj9l2ZC4OkeG4vXIgMTApnedSNg==",
-      "type": "package",
-      "path": "automapper/13.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "automapper.13.0.0.nupkg.sha512",
-        "automapper.nuspec",
-        "icon.png",
-        "lib/net6.0/AutoMapper.dll",
-        "lib/net6.0/AutoMapper.xml"
-      ]
-    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -2946,10 +2868,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.7.0": {
-      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
-      "path": "microsoft.csharp/4.7.0",
+      "path": "microsoft.csharp/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2962,7 +2884,6 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -2972,7 +2893,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -5630,21 +5551,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Contacts.Data/1.0.0": {
-      "type": "project",
-      "path": "../Contacts.Data/Contacts.Data.csproj",
-      "msbuildProject": "../Contacts.Data/Contacts.Data.csproj"
-    },
-    "Contacts.DTO/1.0.0": {
-      "type": "project",
-      "path": "../Contacts.DTO/Contacts.DTO.csproj",
-      "msbuildProject": "../Contacts.DTO/Contacts.DTO.csproj"
-    },
-    "Contacts.Repositories/1.0.0": {
-      "type": "project",
-      "path": "../Contacts.Repositories/Contacts.Repositories.csproj",
-      "msbuildProject": "../Contacts.Repositories/Contacts.Repositories.csproj"
-    },
     "Contacts.Services/1.0.0": {
       "type": "project",
       "path": "../Contacts.Services/Contacts.Services.csproj",
@@ -5653,8 +5559,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Contacts.Data >= 1.0.0",
-      "Contacts.Repositories >= 1.0.0",
       "Contacts.Services >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.23.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
@@ -5672,11 +5576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj",
-      "projectName": "Contacts",
-      "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\Contacts.csproj",
+      "projectUniqueName": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Contacts.API.csproj",
+      "projectName": "Contacts.API",
+      "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Contacts.API.csproj",
       "packagesPath": "C:\\Users\\Ashraf Patel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts\\obj\\",
+      "outputPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5698,14 +5602,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj": {
-              "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Data\\Contacts.Data.csproj"
-            },
-            "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj": {
-              "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Repositories\\Contacts.Repositories.csproj"
-            },
-            "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj": {
-              "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\netcore-crud\\Contacts\\Contacts.Services\\Contacts.Services.csproj"
+            "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj": {
+              "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj"
             }
           }
         }

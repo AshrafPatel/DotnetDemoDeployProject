@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Net.Mail;
 
-namespace Contacts.Data.Models
+namespace Contacts.Core.Entities
 {
     [Index(nameof(Email), IsUnique = true)]
     public class Contact

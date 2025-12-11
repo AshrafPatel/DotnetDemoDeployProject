@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Contacts.DTO
+namespace Contacts.Shared.DTOs
 {
     public class ContactDto
     {

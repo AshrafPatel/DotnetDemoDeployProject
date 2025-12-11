@@ -1,11 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Contacts.API",
-    "\\Contacts.Core",
-    "\\Contacts.Infrastructure",
-    "\\Contacts.Shared",
-    "\\Contacts.UI"
+    ""
   ],
   "PreviewInSolutionExplorer": false
 }

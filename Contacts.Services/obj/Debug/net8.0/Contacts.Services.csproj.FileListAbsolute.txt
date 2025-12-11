@@ -1,0 +1,5 @@
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Services\obj\Debug\net8.0\Contacts.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Services\obj\Debug\net8.0\Contacts.Services.AssemblyInfoInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Services\obj\Debug\net8.0\Contacts.Services.AssemblyInfo.cs
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Services\obj\Debug\net8.0\Contacts.Services.csproj.CoreCompileInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Services\obj\Debug\net8.0\Contacts.Services.sourcelink.json

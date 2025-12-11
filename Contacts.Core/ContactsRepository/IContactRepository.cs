@@ -1,6 +1,8 @@
-﻿using Contacts.Data.Models;
+﻿
 
-namespace Contacts.Services.Contacts
+using Contacts.Core.Entities;
+
+namespace Contacts.Core.ContactsRepository
 {
     public interface IContactRepository
     {

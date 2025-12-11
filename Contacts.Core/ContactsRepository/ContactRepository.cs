@@ -1,9 +1,9 @@
-﻿using Contacts.Data;
-using Contacts.Data.Models;
+﻿using Contacts.Core.Entities;
+using Contacts.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Contacts.Services.Contacts
+namespace Contacts.Core.ContactsRepository
 {
     public class ContactRepository : IContactRepository
     {

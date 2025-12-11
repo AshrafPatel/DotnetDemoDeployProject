@@ -1,6 +1,4 @@
-using Contacts.Data;
-using Contacts.Repositories;
-using Contacts.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +7,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddLogging();
 builder.Services.AddControllers();
-builder.Services.AddDataServices(builder.Configuration);
-builder.Services.AddAppServices();
-builder.Services.AddRepoServices();
 
 builder.Services.AddAuthorization();
 

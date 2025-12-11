@@ -1,7 +1,6 @@
-﻿using Contacts.Data.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
-namespace Contacts.Data
+namespace Contacts.Infrastructure.Data
 {
     public class ContactDbContext : DbContext
     {
@@ -11,6 +10,6 @@ namespace Contacts.Data
 
         }
 
-        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Contact> Contacts { get; set; } = null!;
     }
 }

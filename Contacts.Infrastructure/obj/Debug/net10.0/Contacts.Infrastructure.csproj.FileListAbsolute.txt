@@ -1,0 +1,6 @@
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.AssemblyInfo.cs
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Infrastructure\obj\Debug\net10.0\Contacts.Infrastructure.sourcelink.json
