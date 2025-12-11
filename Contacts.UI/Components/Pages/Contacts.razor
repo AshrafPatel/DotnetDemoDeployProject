@@ -31,10 +31,10 @@ else
             @foreach (var c in contacts)
             {
                 <tr>
-                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Name input /></td>
-                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Email input /></td>
-                    <td><button id="@c.Id" class="btn btn-warning" @onclick="@(() => UpdateContact(c))">@(c.IsEditing ? "Update" : "Edit")</button></td>
-                    <td><button id="@c.Id" class="btn btn-danger"  @onclick="@(() => DeleteContact(c.Id))">Delete</button></td>
+                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Name/></td>
+                    <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Email/></td>
+                    <td><button type="button" class="btn btn-warning" @onclick="@(() => UpdateContact(c))">@(c.IsEditing ? "Update" : "Edit")</button></td>
+                    <td><button type="button" class="btn btn-danger"  @onclick="@(() => DeleteContact(c.Id))">Delete</button></td>
                 </tr>
             }
         </tbody>
@@ -80,13 +80,12 @@ else
 
     private async Task UpdateContact(ContactDto contactDto)
     {
+        Console.WriteLine("Update clicked");
         if (contactDto.IsEditing)
         {
             await Api.UpdateAsync(contactDto);
         }
         contactDto.IsEditing = !contactDto.IsEditing;
-        await RefreshContacts();
-
     }
 
     private async Task DeleteContact(Guid id)

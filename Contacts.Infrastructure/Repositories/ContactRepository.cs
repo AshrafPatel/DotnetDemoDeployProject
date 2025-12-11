@@ -19,10 +19,7 @@ namespace Contacts.Infrastructure.Repositories
 
         public async Task<Contact> AddAsync(Contact contact)
         {
-            if (contact == null)
-            {
-                throw new ArgumentNullException(nameof(contact));
-            }
+            ArgumentNullException.ThrowIfNull(contact);
             contact.Id = Guid.NewGuid();
             await _contactDbContext.AddAsync(contact);
             await _contactDbContext.SaveChangesAsync();
@@ -74,10 +71,7 @@ namespace Contacts.Infrastructure.Repositories
             {
                 throw new ArgumentException($"Invalid contact ID {id}");
             }
-            if (contact == null)
-            {
-                throw new ArgumentNullException(nameof(contact));
-            }
+            ArgumentNullException.ThrowIfNull(contact);
 
             contactInDb = await _contactDbContext.Contacts.SingleOrDefaultAsync(x => x.Id == id);
             if (contactInDb == null) return null;
@@ -98,6 +92,12 @@ namespace Contacts.Infrastructure.Repositories
             List<Contact>? contacts = await _contactDbContext.Contacts.Where(x => x.Name.Contains(name)).ToListAsync();
             _logger.LogInformation("{Count} contacts found for name {Name}", contacts.Count, name);
             return contacts;
+        }
+
+        public async Task<bool> IsEmailExists(string email)
+        {
+            List<Contact>? contacts = await _contactDbContext.Contacts.Where(x => x.Email.Contains(email)).ToListAsync();
+            return contacts.Any();
         }
     }
 }

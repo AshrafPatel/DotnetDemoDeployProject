@@ -3,7 +3,6 @@
 using Contacts.Services;
 using Contacts.Infrastructure;
 using Contacts.Core;
-using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 using Contacts.Services.Profiles;
 
@@ -16,7 +15,7 @@ builder.Services.AddLogging();
 builder.Services.AddControllers();
 builder.Services.AddCors();
 
-builder.Services.AddAutoMapper(cfg =>
+builder.Services.AddAutoMapper(cfg => 
     cfg.AddProfile<MapperConfig>()
 );
 

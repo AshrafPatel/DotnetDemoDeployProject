@@ -3,7 +3,6 @@ using Contacts.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Contacts.Core.Interfaces;
 using Contacts.Infrastructure.Repositories;
 
 

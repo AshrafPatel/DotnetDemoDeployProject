@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Contacts.Controllers
+namespace Contacts.API.Controllers
 {
     [ApiController]
     [Route("error")]

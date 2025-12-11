@@ -110,3 +110,4 @@ C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net1
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.pdb
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.genruntimeconfig.cache
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\ref\Contacts.UI.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

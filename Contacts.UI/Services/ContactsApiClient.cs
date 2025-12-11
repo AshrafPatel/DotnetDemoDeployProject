@@ -21,10 +21,10 @@ namespace Contacts.UI.Services
             return await _http.GetFromJsonAsync<ContactDto>($"https://localhost:5000/api/contacts/{id}");
         }   
 
-        public async Task CreateAsync(ContactDto contact)
+        public async Task<bool> CreateAsync(ContactDto contact)
         {
             var response = await _http.PostAsJsonAsync("https://localhost:5000/api/contacts", contact);
-            response.EnsureSuccessStatusCode();
+            return response.IsSuccessStatusCode;
         }
 
         public async Task DeleteAsync(Guid id) {
@@ -32,9 +32,9 @@ namespace Contacts.UI.Services
             response.EnsureSuccessStatusCode();
         }
 
-        public async Task UpdateAsync(ContactDto contact) {
+        public async Task<bool> UpdateAsync(ContactDto contact) {
             var response = await _http.PutAsJsonAsync($"https://localhost:5000/api/contacts/{contact.Id}", contact);
-            response.EnsureSuccessStatusCode();
+            return response.IsSuccessStatusCode;
         }
 
         public async Task<List<ContactDto>?> SearchAsync(string name)

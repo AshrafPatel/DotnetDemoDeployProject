@@ -10,5 +10,6 @@ namespace Contacts.Core.Interfaces
         Task<Contact?> GetContactAsync(Guid id);
         Task<Contact?> UpdateAsync(Guid id, Contact contact);
         Task<List<Contact>> FindContactByName(string name);
+        Task<bool> IsEmailExists(string email);
     }
 }
