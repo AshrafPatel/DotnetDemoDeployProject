@@ -27,7 +27,7 @@ namespace Contacts.Infrastructure
             {
                 // Production (PostgreSQL on Neon.tech)
                 var connectionStringProd = Environment.GetEnvironmentVariable("ConnectionStrings__Default");
-                services.AddDbContext<ContactDbContext>(options => options.UseNpgsql(connectionString));
+                services.AddDbContext<ContactDbContext>(options => options.UseNpgsql(connectionStringProd));
             }
 
             services.AddScoped<IContactRepository, ContactRepository>();
