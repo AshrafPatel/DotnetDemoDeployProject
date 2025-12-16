@@ -35,12 +35,8 @@ namespace Contacts.Infrastructure
             else
             {
                 // Production (PostgreSQL on Neon.tech)
-                services.AddDbContext<ContactDbContext>(options => 
-                    options.UseNpgsql(connectionString, o =>
-                    {
-                        o.use()
-                    }));
-
+                services.AddDbContext<ContactDbContext>(options =>
+                    options.UseNpgsql(connectionString));
             }
 
             services.AddScoped<IContactRepository, ContactRepository>();

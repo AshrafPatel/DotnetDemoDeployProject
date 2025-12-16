@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.infrastructure\\data\\contactdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\data\\contactdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E741CF7-C13F-BFEC-FCA5-55B94112EC81}|Contacts.Core\\Contacts.Core.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.core\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E741CF7-C13F-BFEC-FCA5-55B94112EC81}|Contacts.Core\\Contacts.Core.csproj|solutionrelative:contacts.core\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -190,8 +190,7 @@
               "RelativeToolTip": "Contacts.API\\appsettings.Production.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T21:02:36.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T21:02:36.564Z"
             },
             {
               "$type": "Document",
@@ -203,8 +202,7 @@
               "RelativeToolTip": "Contacts.API\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T18:41:25.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T18:41:25.145Z"
             },
             {
               "$type": "Document",
@@ -216,25 +214,24 @@
               "RelativeToolTip": "Contacts.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:37:27.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T18:37:27.045Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "InfrastructureService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
               "RelativeDocumentMoniker": "Contacts.Infrastructure\\InfrastructureService.cs",
               "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
               "RelativeToolTip": "Contacts.Infrastructure\\InfrastructureService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAowCgAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswCUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-11T02:08:04.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Entities\\Contact.cs",
               "RelativeDocumentMoniker": "Contacts.Core\\Entities\\Contact.cs",
@@ -242,12 +239,11 @@
               "RelativeToolTip": "Contacts.Core\\Entities\\Contact.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T01:04:16.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T01:04:16.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContactDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\Data\\ContactDbContext.cs",
               "RelativeDocumentMoniker": "Contacts.Infrastructure\\Data\\ContactDbContext.cs",
