@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure;
+
 
 
 namespace Contacts.Infrastructure
@@ -34,7 +36,10 @@ namespace Contacts.Infrastructure
             {
                 // Production (PostgreSQL on Neon.tech)
                 services.AddDbContext<ContactDbContext>(options => 
-                    options.UseNpgsql(connectionString));
+                    options.UseNpgsql(connectionString, o =>
+                    {
+                        o.use()
+                    }));
 
             }
 

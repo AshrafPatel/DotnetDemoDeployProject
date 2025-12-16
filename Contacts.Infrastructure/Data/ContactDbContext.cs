@@ -12,5 +12,17 @@ namespace Contacts.Infrastructure.Data
         }
 
         public DbSet<Contact> Contacts { get; set; } = null!;
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Contact>(entity =>
+            {
+                entity.ToTable("Contacts");
+                entity.Property(e => e.Id).HasColumnName("id");
+                entity.Property(e => e.Name).HasColumnName("name");
+                entity.Property(e => e.Email).HasColumnName("email");
+            });
+        }
+
     }
 }
