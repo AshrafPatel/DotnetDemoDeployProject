@@ -13,10 +13,17 @@ namespace Contacts.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("ContactsDb");
+            var connectionString = configuration.GetConnectionString("Default");
 
             // Detect provider by environment
             var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                throw new InvalidOperationException(
+                    "Connection string 'Default' was not found. Check environment variables.");
+            }
+
             if (env == "Development")
             {
                 // Local development (SQL Server LocalDB)
@@ -26,8 +33,9 @@ namespace Contacts.Infrastructure
             else
             {
                 // Production (PostgreSQL on Neon.tech)
-                var connectionStringProd = Environment.GetEnvironmentVariable("ConnectionStrings__Default");
-                services.AddDbContext<ContactDbContext>(options => options.UseNpgsql(connectionStringProd));
+                services.AddDbContext<ContactDbContext>(options => 
+                    options.UseNpgsql(connectionString));
+
             }
 
             services.AddScoped<IContactRepository, ContactRepository>();
