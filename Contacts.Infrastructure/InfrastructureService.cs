@@ -1,9 +1,10 @@
 ﻿using Contacts.Core.Interfaces;
 using Contacts.Infrastructure.Data;
+using Contacts.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Contacts.Infrastructure.Repositories;
+using Microsoft.Extensions.Options;
 
 
 namespace Contacts.Infrastructure
@@ -25,8 +26,8 @@ namespace Contacts.Infrastructure
             else
             {
                 // Production (PostgreSQL on Neon.tech)
-                services.AddDbContext<ContactDbContext>(options =>
-                    options.UseNpgsql(connectionString));
+                var connectionStringProd = Environment.GetEnvironmentVariable("ConnectionStrings__Default");
+                services.AddDbContext<ContactDbContext>(options => options.UseNpgsql(connectionString));
             }
 
             services.AddScoped<IContactRepository, ContactRepository>();

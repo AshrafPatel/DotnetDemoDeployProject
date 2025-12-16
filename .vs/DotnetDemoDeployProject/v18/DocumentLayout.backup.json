@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.ui\\dockerfile.ui||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\dockerfile.ui||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -29,18 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.ui\\contacts.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\contacts.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|solutionrelative:contacts.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{35885F2C-6368-16B6-AAF5-6B950397D567}|Contacts.API\\Contacts.API.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -119,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\infrastructureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90D5878E-9347-4FB8-8393-9FA606303D3E}|Contacts.Services\\Contacts.Services.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.services\\profiles\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D5878E-9347-4FB8-8393-9FA606303D3E}|Contacts.Services\\Contacts.Services.csproj|solutionrelative:contacts.services\\profiles\\mapperconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -169,6 +165,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6E741CF7-C13F-BFEC-FCA5-55B94112EC81}|Contacts.Core\\Contacts.Core.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.core\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6E741CF7-C13F-BFEC-FCA5-55B94112EC81}|Contacts.Core\\Contacts.Core.csproj|solutionrelative:contacts.core\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Contacts.UI\\Dockerfile.UI||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,62 +178,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dockerfile.UI",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI",
-              "RelativeDocumentMoniker": "Contacts.UI\\Dockerfile.UI",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI",
-              "RelativeToolTip": "Contacts.UI\\Dockerfile.UI",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-11T23:52:36.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Contacts.UI\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Contacts.UI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-11T21:13:11.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "Contacts.UI\\appsettings.Production.json",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
-              "RelativeToolTip": "Contacts.UI\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T19:03:55.883Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile",
-              "RelativeDocumentMoniker": "Contacts.API\\Dockerfile",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile",
-              "RelativeToolTip": "Contacts.API\\Dockerfile",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-11T21:26:54.812Z",
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Contacts.API\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Production.json",
+              "RelativeToolTip": "Contacts.API\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T21:02:36.564Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Contacts.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Development.json",
+              "RelativeToolTip": "Contacts.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T18:41:25.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Program.cs",
+              "RelativeDocumentMoniker": "Contacts.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Program.cs",
+              "RelativeToolTip": "Contacts.API\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T18:37:27.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InfrastructureService.cs",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
+              "RelativeDocumentMoniker": "Contacts.Infrastructure\\InfrastructureService.cs",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
+              "RelativeToolTip": "Contacts.Infrastructure\\InfrastructureService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowBwAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T02:08:04.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Contacts.UI\\appsettings.Development.json",
@@ -245,19 +259,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "Contacts.API\\appsettings.Production.json",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Production.json",
-              "RelativeToolTip": "Contacts.API\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T21:02:36.564Z"
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile",
+              "RelativeDocumentMoniker": "Contacts.API\\Dockerfile",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile",
+              "RelativeToolTip": "Contacts.API\\Dockerfile",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-11T21:26:54.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "Contacts.UI\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
+              "RelativeToolTip": "Contacts.UI\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T19:03:55.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Dockerfile.UI",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI",
+              "RelativeDocumentMoniker": "Contacts.UI\\Dockerfile.UI",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI",
+              "RelativeToolTip": "Contacts.UI\\Dockerfile.UI",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-11T23:52:36.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Contacts.API\\Properties\\launchSettings.json",
@@ -265,12 +303,11 @@
               "RelativeToolTip": "Contacts.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T21:08:57.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T21:08:57.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Contacts.UI.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Contacts.UI.csproj",
               "RelativeDocumentMoniker": "Contacts.UI\\Contacts.UI.csproj",
@@ -279,18 +316,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-12-11T16:33:01.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "Contacts.API\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Development.json",
-              "RelativeToolTip": "Contacts.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T18:41:25.145Z"
             },
             {
               "$type": "Document",
@@ -303,18 +328,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-11T18:40:57.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Program.cs",
-              "RelativeDocumentMoniker": "Contacts.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Program.cs",
-              "RelativeToolTip": "Contacts.API\\Program.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:37:27.045Z"
             },
             {
               "$type": "Document",
@@ -535,18 +548,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "InfrastructureService.cs",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
-              "RelativeDocumentMoniker": "Contacts.Infrastructure\\InfrastructureService.cs",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
-              "RelativeToolTip": "Contacts.Infrastructure\\InfrastructureService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T02:08:04.988Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
               "Title": "MapperConfig.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Profiles\\MapperConfig.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\Profiles\\MapperConfig.cs",
@@ -558,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "IContactRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Interfaces\\IContactRepository.cs",
               "RelativeDocumentMoniker": "Contacts.Core\\Interfaces\\IContactRepository.cs",
@@ -570,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "IContactService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\ContactsService\\IContactService.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\ContactsService\\IContactService.cs",
@@ -582,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "BusinessService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\BusinessService.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\BusinessService.cs",
@@ -594,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "ReconnectModal.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor",
@@ -606,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\NavMenu.razor",
@@ -618,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\MainLayout.razor",
@@ -630,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Pages\\Home.razor",
@@ -642,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Pages\\Error.razor",
@@ -654,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "Contacts.Services.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj",
               "RelativeDocumentMoniker": "Contacts.Services\\Contacts.Services.csproj",
@@ -666,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "Contacts.Core.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Contacts.Core.csproj",
               "RelativeDocumentMoniker": "Contacts.Core\\Contacts.Core.csproj",
@@ -678,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Entities\\Contact.cs",
               "RelativeDocumentMoniker": "Contacts.Core\\Entities\\Contact.cs",
