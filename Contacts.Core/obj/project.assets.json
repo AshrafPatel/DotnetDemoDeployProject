@@ -129,6 +129,16 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Contacts.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Contacts.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contacts.Shared.dll": {}
+        }
       }
     }
   },
@@ -400,10 +410,16 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Contacts.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Contacts.Shared/Contacts.Shared.csproj",
+      "msbuildProject": "../Contacts.Shared/Contacts.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Contacts.Shared >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.1",
       "Microsoft.Extensions.Logging >= 10.0.1"
     ]
@@ -440,7 +456,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Shared\\Contacts.Shared.csproj": {
+              "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Shared\\Contacts.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -48,8 +48,8 @@ namespace Contacts.Services.ContactsService
                     _logger.LogWarning("A contact with email {ContactEmail} already exists.", contactDto.Email);
                     throw new DuplicateEmailException($"A contact with email {contactDto.Email} already exists.");
                 }
-                else 
-                { 
+                else
+                {
                     _logger.LogInformation("Contact data validated successfully.");
                     Contact contact = _mapper.Map<Contact>(contactDto);
                     await _contactRepository.AddAsync(contact);
@@ -152,7 +152,7 @@ namespace Contacts.Services.ContactsService
         public async Task<ContactDto?> UpdateAsync(Guid id, ContactDto contactDto)
         {
             Contact? updateContactDto;
-            Contact originalContact = await _contactRepository.GetContactAsync(id);
+            Contact? originalContact = await _contactRepository.GetContactAsync(id);
             try
             {
                 _logger.LogInformation("Attempting to update contact with ID {ContactId}.", id);
@@ -169,7 +169,8 @@ namespace Contacts.Services.ContactsService
                     _logger.LogWarning("Contact email cannot be empty.");
                     throw new InvalidContactException("Contact email cannot be empty.");
                 }
-                else if (await _contactRepository.IsEmailExists(contactDto.Email) && originalContact.Email != contactDto.Email)
+                else if (await _contactRepository.IsEmailExists(contactDto.Email)
+                    && originalContact.Email != contactDto.Email)
                 {
                     _logger.LogWarning("A contact with email {ContactEmail} already exists.", contactDto.Email);
                     throw new DuplicateEmailException($"A contact with email {contactDto.Email} already exists.");

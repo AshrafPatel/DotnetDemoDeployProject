@@ -1005,11 +1005,20 @@
       },
       "Contacts.Core/1.0.0": {
         "dependencies": {
+          "Contacts.Shared": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.1",
           "Microsoft.Extensions.Logging": "10.0.1"
         },
         "runtime": {
           "Contacts.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Contacts.Shared/1.0.0": {
+        "runtime": {
+          "Contacts.Shared.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1458,6 +1467,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Contacts.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Contacts.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

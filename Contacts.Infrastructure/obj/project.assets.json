@@ -1641,6 +1641,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Contacts.Shared": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.1",
           "Microsoft.Extensions.Logging": "10.0.1"
         },
@@ -1649,6 +1650,16 @@
         },
         "runtime": {
           "bin/placeholder/Contacts.Core.dll": {}
+        }
+      },
+      "Contacts.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Contacts.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Contacts.Shared.dll": {}
         }
       }
     }
@@ -4805,6 +4816,11 @@
       "type": "project",
       "path": "../Contacts.Core/Contacts.Core.csproj",
       "msbuildProject": "../Contacts.Core/Contacts.Core.csproj"
+    },
+    "Contacts.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Contacts.Shared/Contacts.Shared.csproj",
+      "msbuildProject": "../Contacts.Shared/Contacts.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -1182,6 +1182,7 @@
       },
       "Contacts.Core/1.0.0": {
         "dependencies": {
+          "Contacts.Shared": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.1",
           "Microsoft.Extensions.Logging": "10.0.1"
         },

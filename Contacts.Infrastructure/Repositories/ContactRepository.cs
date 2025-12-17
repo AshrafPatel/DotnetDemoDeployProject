@@ -77,6 +77,8 @@ namespace Contacts.Infrastructure.Repositories
             if (contactInDb == null) return null;
             contactInDb.Name = contact.Name;
             contactInDb.Email = contact.Email;
+            contactInDb.State = contact.State;
+            contactInDb.CreatedAt = contact.CreatedAt;  
 
             await _contactDbContext.SaveChangesAsync();
             _logger.LogInformation("Updated contact with ID {ContactId}", id);

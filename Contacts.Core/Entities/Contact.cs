@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Contacts.Shared.Enums;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Contacts.Core.Entities
@@ -9,8 +10,18 @@ namespace Contacts.Core.Entities
         [Column("id")]
         public Guid Id { get; set; }
         [Column("email")]
+        [Required]
+        [EmailAddress]
         public string Email { get; set; } = string.Empty;
         [Column("name")]
+        [Required]
         public string Name { get; set; } = string.Empty;
+        [Column("created_at")]
+        [Required]
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        [Column("state")]
+        [Required]
+        public State State { get; set; } = State.New;
+
     }
 }

@@ -21,6 +21,8 @@ namespace Contacts.Infrastructure.Data
                 entity.Property(e => e.Id).HasColumnName("id");
                 entity.Property(e => e.Name).HasColumnName("name");
                 entity.Property(e => e.Email).HasColumnName("email");
+                entity.Property(e => e.CreatedAt).HasColumnName("created_at");
+                entity.Property(e => e.State).HasColumnName("state");
             });
         }
 

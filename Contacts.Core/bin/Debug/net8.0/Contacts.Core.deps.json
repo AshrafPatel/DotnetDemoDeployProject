@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Contacts.Core/1.0.0": {
         "dependencies": {
+          "Contacts.Shared": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.1",
           "Microsoft.Extensions.Logging": "10.0.1"
         },
@@ -86,6 +87,14 @@
             "fileVersion": "10.0.125.57005"
           }
         }
+      },
+      "Contacts.Shared/1.0.0": {
+        "runtime": {
+          "Contacts.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -143,6 +152,11 @@
       "sha512": "sha512-wVYO4/71Pk177uQ3TG8ZQFS3Pnmr98cF9pYxnpuIb/bMnbEWsdZZoLU/euv29mfSi2/Iuypj0TRUchPk7aqBGg==",
       "path": "system.diagnostics.diagnosticsource/10.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.10.0.1.nupkg.sha512"
+    },
+    "Contacts.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
