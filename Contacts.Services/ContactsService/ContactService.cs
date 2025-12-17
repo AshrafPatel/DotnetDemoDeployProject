@@ -51,6 +51,7 @@ namespace Contacts.Services.ContactsService
                 else
                 {
                     _logger.LogInformation("Contact data validated successfully.");
+                    contactDto.CreatedAt = DateTime.UtcNow;
                     Contact contact = _mapper.Map<Contact>(contactDto);
                     await _contactRepository.AddAsync(contact);
                     _logger.LogInformation("Successfully added a new contact with ID {ContactId}.", contact.Id);

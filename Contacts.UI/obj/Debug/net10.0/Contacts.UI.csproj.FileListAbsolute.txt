@@ -97,8 +97,6 @@ C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net1
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\qo1itopbfh-{0}-13ja33weya-13ja33weya.gz
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\qwafh94igm-{0}-wmp8iwak4q-wmp8iwak4q.gz
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\zely760455-{0}-2lgipwaf5j-2lgipwaf5j.gz
-C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\ahjudjqulp-{0}-uyqki25nmp-uyqki25nmp.gz
-C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\vhfnzpr6j6-{0}-uyqki25nmp-uyqki25nmp.gz
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\staticwebassets.development.json
@@ -111,3 +109,5 @@ C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net1
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.pdb
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\Contacts.UI.genruntimeconfig.cache
 C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\ref\Contacts.UI.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\ahjudjqulp-{0}-e08oexl5ol-e08oexl5ol.gz
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.UI\obj\Debug\net10.0\compressed\vhfnzpr6j6-{0}-e08oexl5ol-e08oexl5ol.gz

@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "Contacts.API\\Contacts.API.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "Contacts"
       },
       {
         "Path": "Contacts.UI\\Contacts.UI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "Contacts.UI"
       }
     ]
   }

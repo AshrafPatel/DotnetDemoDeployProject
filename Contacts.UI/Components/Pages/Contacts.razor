@@ -1,5 +1,4 @@
 ﻿@page "/contacts"
-@using global::Contacts.Shared.DTOs
 @inject ContactsApiClient Api
 @rendermode InteractiveServer
 @inject NavigationManager Nav
@@ -24,8 +23,10 @@ else
             <tr>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Update</th>
-                <th>Delete</th>
+                <th>Created On</th>
+                <th>State</th>
+                <td>Edit</td>
+                <td>Delete</td>
             </tr>
         </thead>
         <tbody>
@@ -34,26 +35,21 @@ else
                 <tr>
                     <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Name/></td>
                     <td><input class="form-control col" type="text" disabled="@(c.IsEditing == false)" @bind-value=@c.Email/></td>
+                    <td><input class="form-control col" type="datetime" disabled="@(c.IsEditing == false)" @bind-value=@c.CreatedAt/></td>
+                    <td>
+                        <InputSelect class="form-control" @bind-value="@c.State" disabled="@(c.IsEditing == false)">
+                            @foreach (var s in Enum.GetValues<State>())
+                            {
+                                <option value="@c.State">@s</option>
+                            }
+                        </InputSelect>
+                    </td>
                     <td><button type="button" class="btn btn-warning" @onclick="@(() => UpdateContact(c))">@(c.IsEditing ? "Update" : "Edit")</button></td>
                     <td><button type="button" class="btn btn-danger"  @onclick="@(() => DeleteContact(c.Id))">Delete</button></td>
                 </tr>
             }
         </tbody>
      </table>
-
-     <form class="mt-4">
-        <h4>Add New Contact</h4>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" @bind="contactToAdd.Name" />
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" @bind="contactToAdd.Email" />
-        </div>
-        <button type="button" class="btn btn-primary" @onclick="@(() => AddContact(contactToAdd))">Add Contact
-        </button>
-      </form>
 }
 
 @code {
@@ -97,18 +93,6 @@ else
     private async Task DeleteContact(Guid id)
     {
         await Api.DeleteAsync(id);
-        await RefreshContacts();
-    }
-
-    private async Task AddContact(ContactDto contactDto)
-    {
-        bool success = await Api.CreateAsync(contactDto);
-        if (!success)
-        {
-            Nav.NavigateTo("/error", forceLoad: true);
-            return;
-        }
-        contactToAdd = new ContactDto();
         await RefreshContacts();
     }
 }

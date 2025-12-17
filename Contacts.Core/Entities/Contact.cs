@@ -18,7 +18,7 @@ namespace Contacts.Core.Entities
         public string Name { get; set; } = string.Empty;
         [Column("created_at")]
         [Required]
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         [Column("state")]
         [Required]
         public State State { get; set; } = State.New;

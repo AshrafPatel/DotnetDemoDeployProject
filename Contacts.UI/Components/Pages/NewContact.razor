@@ -1,0 +1,38 @@
+﻿@page "/contacts/new"
+@inject ContactsApiClient Api
+@rendermode InteractiveServer
+@inject NavigationManager Nav
+
+<h3>Add New Contacts</h3>
+
+
+<form class="mt-4">
+    <h4>Add New Contact</h4>
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" @bind="contactToAdd.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" @bind="contactToAdd.Email" />
+    </div>
+    <button type="button" class="btn btn-primary" @onclick="@(() => AddContact(contactToAdd))">
+        Add Contact
+    </button>
+</form>
+
+@code {
+    ContactDto contactToAdd = new ContactDto();
+
+    private async Task AddContact(ContactDto contactDto)
+    {
+        bool success = await Api.CreateAsync(contactDto);
+        if (!success)
+        {
+            Nav.NavigateTo("/error", forceLoad: true);
+            return;
+        }
+        contactToAdd = new ContactDto();
+        Nav.NavigateTo("/contacts", forceLoad: true);
+    }
+}

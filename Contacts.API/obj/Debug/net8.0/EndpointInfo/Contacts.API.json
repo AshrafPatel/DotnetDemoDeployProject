@@ -170,6 +170,12 @@
   "components": {
     "schemas": {
       "ContactDto": {
+        "required": [
+          "createdAt",
+          "email",
+          "name",
+          "state"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -177,18 +183,35 @@
             "format": "uuid"
           },
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "isEditing": {
             "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "state": {
+            "$ref": "#/components/schemas/State"
           }
         },
         "additionalProperties": false
+      },
+      "State": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
       }
     }
   }
