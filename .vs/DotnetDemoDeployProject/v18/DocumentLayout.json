@@ -71,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{34C82490-6F1C-463C-AF46-357DC3B125DC}|Contacts.Infrastructure\\Contacts.Infrastructure.csproj|solutionrelative:contacts.infrastructure\\repositories\\contactrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.ui\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3B8CF977-C474-C52F-EA94-C910611121CE}|Contacts.UI\\Contacts.UI.csproj|solutionrelative:contacts.ui\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90D5878E-9347-4FB8-8393-9FA606303D3E}|Contacts.Services\\Contacts.Services.csproj|c:\\users\\ashraf patel\\desktop\\dotnetdemodeployproject\\contacts.services\\exceptions\\invalidcontactexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90D5878E-9347-4FB8-8393-9FA606303D3E}|Contacts.Services\\Contacts.Services.csproj|solutionrelative:contacts.services\\exceptions\\invalidcontactexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -186,21 +182,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReconnectModal.razor.js",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
-              "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
-              "RelativeToolTip": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-12-17T22:34:54.918Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -224,8 +207,7 @@
               "RelativeToolTip": "Contacts.UI\\Components\\Pages\\Contacts.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-11T19:02:10.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T19:02:10.944Z"
             },
             {
               "$type": "Document",
@@ -237,8 +219,7 @@
               "RelativeToolTip": "Contacts.Shared\\Enums\\State.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T14:43:32.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T14:43:32.454Z"
             },
             {
               "$type": "Document",
@@ -250,8 +231,7 @@
               "RelativeToolTip": "Contacts.Shared\\DTOs\\ContactDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T19:03:33.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T19:03:33.784Z"
             },
             {
               "$type": "Document",
@@ -263,8 +243,7 @@
               "RelativeToolTip": "Contacts.Core\\Entities\\Contact.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAswBQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T01:04:16.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T01:04:16.631Z"
             },
             {
               "$type": "Document",
@@ -276,8 +255,7 @@
               "RelativeToolTip": "Contacts.Services\\ContactsService\\ContactService.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAywDcAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T13:43:17.19Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T13:43:17.19Z"
             },
             {
               "$type": "Document",
@@ -289,8 +267,7 @@
               "RelativeToolTip": "Contacts.UI\\Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-11T15:31:43.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T15:31:43.349Z"
             },
             {
               "$type": "Document",
@@ -302,8 +279,7 @@
               "RelativeToolTip": "Contacts.UI\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-11T15:32:05.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T15:32:05.539Z"
             },
             {
               "$type": "Document",
@@ -315,21 +291,19 @@
               "RelativeToolTip": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor.css",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-17T22:35:00.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T22:35:00.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "Contacts.UI\\appsettings.Production.json",
-              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.Production.json",
-              "RelativeToolTip": "Contacts.UI\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T19:03:55.883Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "ReconnectModal.razor.js",
+              "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
+              "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
+              "ToolTip": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
+              "RelativeToolTip": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor.js",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-17T22:34:54.918Z"
             },
             {
               "$type": "Document",
@@ -341,8 +315,7 @@
               "RelativeToolTip": "Contacts.UI\\Components\\Pages\\NewContact.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-17T18:50:54.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T18:50:54.46Z"
             },
             {
               "$type": "Document",
@@ -354,8 +327,7 @@
               "RelativeToolTip": "Contacts.UI\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T13:41:41.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T13:41:41.487Z"
             },
             {
               "$type": "Document",
@@ -367,8 +339,7 @@
               "RelativeToolTip": "Contacts.Infrastructure\\Repositories\\ContactRepository.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAvwDoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T00:23:47.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-17T00:23:47.403Z"
             },
             {
               "$type": "Document",
@@ -380,8 +351,7 @@
               "RelativeToolTip": "Contacts.API\\Program.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T18:37:27.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T18:37:27.045Z"
             },
             {
               "$type": "Document",
@@ -393,8 +363,7 @@
               "RelativeToolTip": "Contacts.UI\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T21:13:11.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T21:13:11.685Z"
             },
             {
               "$type": "Document",
@@ -406,8 +375,7 @@
               "RelativeToolTip": "Contacts.UI\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-11T19:03:53.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T19:03:53.634Z"
             },
             {
               "$type": "Document",
@@ -419,12 +387,11 @@
               "RelativeToolTip": "Contacts.UI\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-11T18:03:57.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-11T18:03:57.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "InvalidContactException.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Exceptions\\InvalidContactException.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\Exceptions\\InvalidContactException.cs",
@@ -436,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "DuplicateEmailException.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Exceptions\\DuplicateEmailException.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\Exceptions\\DuplicateEmailException.cs",
@@ -448,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "ContactDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\Data\\ContactDbContext.cs",
               "RelativeDocumentMoniker": "Contacts.Infrastructure\\Data\\ContactDbContext.cs",
@@ -460,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Production.json",
               "RelativeDocumentMoniker": "Contacts.API\\appsettings.Production.json",
@@ -472,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Contacts.API\\appsettings.Development.json",
@@ -484,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "IContactRepository.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Interfaces\\IContactRepository.cs",
               "RelativeDocumentMoniker": "Contacts.Core\\Interfaces\\IContactRepository.cs",
@@ -496,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "InfrastructureService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Infrastructure\\InfrastructureService.cs",
               "RelativeDocumentMoniker": "Contacts.Infrastructure\\InfrastructureService.cs",
@@ -508,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Dockerfile",
               "RelativeDocumentMoniker": "Contacts.API\\Dockerfile",
@@ -520,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "Dockerfile.UI",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Dockerfile.UI",
               "RelativeDocumentMoniker": "Contacts.UI\\Dockerfile.UI",
@@ -532,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Contacts.API\\Properties\\launchSettings.json",
@@ -544,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "Contacts.UI.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Contacts.UI.csproj",
               "RelativeDocumentMoniker": "Contacts.UI\\Contacts.UI.csproj",
@@ -556,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\appsettings.json",
               "RelativeDocumentMoniker": "Contacts.API\\appsettings.json",
@@ -568,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\appsettings.json",
               "RelativeDocumentMoniker": "Contacts.UI\\appsettings.json",
@@ -580,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "ContactsApiClient.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Services\\ContactsApiClient.cs",
               "RelativeDocumentMoniker": "Contacts.UI\\Services\\ContactsApiClient.cs",
@@ -592,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "ContactsController.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Controllers\\ContactsController.cs",
               "RelativeDocumentMoniker": "Contacts.API\\Controllers\\ContactsController.cs",
@@ -604,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Contacts.API.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Contacts.API.csproj",
               "RelativeDocumentMoniker": "Contacts.API\\Contacts.API.csproj",
@@ -616,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "ErrorController.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.API\\Controllers\\ErrorController.cs",
               "RelativeDocumentMoniker": "Contacts.API\\Controllers\\ErrorController.cs",
@@ -628,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\App.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\App.razor",
@@ -640,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "NotFound.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Pages\\NotFound.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Pages\\NotFound.razor",
@@ -652,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "MapperConfig.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Profiles\\MapperConfig.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\Profiles\\MapperConfig.cs",
@@ -664,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "IContactService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\ContactsService\\IContactService.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\ContactsService\\IContactService.cs",
@@ -676,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "BusinessService.cs",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\BusinessService.cs",
               "RelativeDocumentMoniker": "Contacts.Services\\BusinessService.cs",
@@ -688,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "ReconnectModal.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\ReconnectModal.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\ReconnectModal.razor",
@@ -700,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Contacts.UI\\Components\\Layout\\MainLayout.razor",
@@ -712,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Contacts.Services.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj",
               "RelativeDocumentMoniker": "Contacts.Services\\Contacts.Services.csproj",
@@ -724,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "Contacts.Core.csproj",
               "DocumentMoniker": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Contacts.Core.csproj",
               "RelativeDocumentMoniker": "Contacts.Core\\Contacts.Core.csproj",
