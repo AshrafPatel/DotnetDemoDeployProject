@@ -37,8 +37,7 @@
                 "$ref": "#/components/schemas/ContactDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -101,8 +100,7 @@
                 "$ref": "#/components/schemas/ContactDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {

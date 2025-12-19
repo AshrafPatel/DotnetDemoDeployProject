@@ -40,7 +40,7 @@ else
                         <InputSelect class="form-control" @bind-value="@c.State" disabled="@(c.IsEditing == false)">
                             @foreach (var s in Enum.GetValues<State>())
                             {
-                                <option value="@c.State">@s</option>
+                                <option value="@s">@s</option>
                             }
                         </InputSelect>
                     </td>

@@ -21,7 +21,7 @@ namespace Contacts.Core.Entities
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         [Column("state")]
         [Required]
-        public State State { get; set; } = State.New;
+        public State State { get; set; }
 
     }
 }

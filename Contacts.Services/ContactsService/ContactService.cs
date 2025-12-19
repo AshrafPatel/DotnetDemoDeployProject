@@ -152,8 +152,9 @@ namespace Contacts.Services.ContactsService
 
         public async Task<ContactDto?> UpdateAsync(Guid id, ContactDto contactDto)
         {
-            Contact? updateContactDto;
+            Contact? updatedContact;
             Contact? originalContact = await _contactRepository.GetContactAsync(id);
+            ContactDto? updatedDto;
             try
             {
                 _logger.LogInformation("Attempting to update contact with ID {ContactId}.", id);
@@ -180,9 +181,11 @@ namespace Contacts.Services.ContactsService
                 { 
                     _logger.LogInformation("Contact data validated successfully.");
                     Contact contactToUpdate = _mapper.Map<Contact>(contactDto);
-                    updateContactDto = await _contactRepository.UpdateAsync(id, contactToUpdate);
+                    updatedContact = await _contactRepository.UpdateAsync(id, contactToUpdate);
+                    _logger.LogInformation("Successfully updated contact with ID {ContactId}.", id);
+                    updatedDto = _mapper.Map<ContactDto>(updatedContact);
                 }
-                return contactDto;
+                return updatedDto;
             }
             catch (Exception ex)
             {

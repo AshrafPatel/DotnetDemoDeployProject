@@ -81,7 +81,7 @@ namespace Contacts.API.Controllers
 
         [HttpPost]
         [ActionName("AddContactAsync")]
-        public async Task<IActionResult> AddContactAsync([FromBody, Required] ContactDto contactDto)
+        public async Task<IActionResult> AddContactAsync([FromBody] ContactDto contactDto)
         {
             try
             {
@@ -92,6 +92,12 @@ namespace Contacts.API.Controllers
                 {
                     _logger.LogWarning("While logging contact could not be created");
                     return BadRequest("Could not create contact.");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for contact add: {ContactId}", contactDto);
+                    return BadRequest(ModelState);
                 }
 
                 return CreatedAtAction(nameof(GetAContactAsync), new { id = contactDto.Id }, contactDto);
@@ -106,7 +112,7 @@ namespace Contacts.API.Controllers
         [HttpPut]
         [ActionName("UpdateContactAsync")]
         [Route("{id:guid}")]
-        public async Task<IActionResult> UpdateContactAsync([FromRoute] Guid id, [FromBody, Required] ContactDto contactDto)
+        public async Task<IActionResult> UpdateContactAsync([FromRoute] Guid id, [FromBody] ContactDto contactDto)
         {
             try
             {
@@ -117,6 +123,12 @@ namespace Contacts.API.Controllers
                 {
                     _logger.LogWarning("Contact not found: {ContactId}", id);
                     return NotFound();
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogWarning("Invalid model state for contact update: {ContactId}", id);
+                    return BadRequest(ModelState);
                 }
 
                 return Ok(contactInDb);

@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+tr {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 100%;
+    margin: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+tr > td {
+    padding: 0 2em;
+}
+
+tr > th {
+    padding: 0 5em;
+}
+
+tr:hover {
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,1);
+}
+
