@@ -54,7 +54,7 @@ class NewContactForm extends Component<{}, NewContactFormState> {
               name: this.state.name
             })
           })
-        this.setState({text: "Contact created successfully!"})
+        this.setState({text: "Contact created successfully!", name: "", email: ""})
       } catch(e) {
         console.error(e);
         this.setState({text: "Could not create contact"})
