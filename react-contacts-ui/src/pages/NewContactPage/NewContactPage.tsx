@@ -1,4 +1,4 @@
-import NewContactForm from "../../components/NewContactForm/NewContactForm.tsx";
+import NewContactForm from "../../components/NewContactForm/NewContactForm";
 import './NewContactPage.css';
 import React from "react";
 

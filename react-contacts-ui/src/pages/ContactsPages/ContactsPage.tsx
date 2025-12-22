@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './ContactsPage.css'
-import ContactRow from '../../components/ContactRow/ContactRow.tsx'
-import process from "process";
+import ContactRow from '../../components/ContactRow/ContactRow'
 
 export default function ContactsPage() {
     const [contacts, setContacts] = useState<any[]>([]);
@@ -9,7 +8,7 @@ export default function ContactsPage() {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/contacts`);
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts`);
             if(!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -47,7 +46,7 @@ export default function ContactsPage() {
             </thead>
             <tbody>
                     {contacts.map((contact:any) => 
-                        <tr>
+                        <tr key={contact.id}>
                             <ContactRow onDelete={() =>getNewContacts(contact.id)} key={contact.id} contact={contact} />
                         </tr>
                     )}

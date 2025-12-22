@@ -1,8 +1,8 @@
 import './App.css';
 import { Navigate, Routes, Route } from 'react-router-dom';
-import ContactsPage from './pages/ContactsPages/ContactsPage.tsx';
-import NewContactPage from './pages/NewContactPage/NewContactPage.tsx';
-import Navbar from './components/NavBar/Navbar.tsx';
+import ContactsPage from './pages/ContactsPages/ContactsPage';
+import NewContactPage from './pages/NewContactPage/NewContactPage.js';
+import Navbar from './components/NavBar/Navbar';
 
 
 function App() {

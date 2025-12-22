@@ -1,14 +1,15 @@
 import "./ContactRow.css";
 import React, { useEffect, useState } from 'react';
-import { State } from "../../enums/State.tsx";
-import process from "process";
+import { State } from "../../enums/State";
 
-export default function ContactRow(props: any) { 
+export default function ContactRow(props: any) {
   const [action, setAction] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [state, setState] = useState<number>(0);
   const [createdAt, setCreatedAt] = useState<string>("");
+  const API = import.meta.env.VITE_API_URL;
+  
 
   useEffect(() => {
     setName(props.contact?.name);
@@ -16,18 +17,14 @@ export default function ContactRow(props: any) {
     setState(props.contact?.state);
     setCreatedAt(props.contact?.createdAt);
   }, [props.contact]);
-  
+
 
   const handleDelete = (e: any) => {
-    const API = process.env.VITE_API_URL;
-    console.log(API);
-
-
-    fetch(`${process.env.VITE_API_URL}/api/contacts/${props.contact.id}`,
-      { 
-        method: 'DELETE', 
+    fetch(`${API}/api/contacts/${props.contact.id}`,
+      {
+        method: 'DELETE',
         headers: {
-        "Content-Type": "application/json"
+          "Content-Type": "application/json"
         }
       }
     )
@@ -35,11 +32,11 @@ export default function ContactRow(props: any) {
   };
 
   const handleEdit = (e: any) => {
-    fetch(`${process.env.VITE_API_URL}/api/contacts/${props.contact.id}`,
-      { 
-        method: 'PUT', 
+    fetch(`${API}/api/contacts/${props.contact.id}`,
+      {
+        method: 'PUT',
         headers: {
-        "Content-Type": "application/json"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           email: email,
@@ -54,34 +51,34 @@ export default function ContactRow(props: any) {
   return (
     <>
       <td>
-        <input type="text" name="name" value={name} disabled={action !== "edit"} onChange={e => setName(e.target.value)}/>
+        <input type="text" name="name" value={name} disabled={action !== "edit"} onChange={e => setName(e.target.value)} />
       </td>
       <td>
-        <input type="text" name="email" value={email} disabled={action !== "edit"} onChange={e => setEmail(e.target.value)}/>
+        <input type="text" name="email" value={email} disabled={action !== "edit"} onChange={e => setEmail(e.target.value)} />
       </td>
       <td>
         <select value={state} onChange={e => setState(Number(e.target.value))} disabled={action !== "edit"}>
           {Object.keys(State)
             .filter(key => !isNaN(Number(key)))
             .map((key) => (
-            <option key={key} value={key}>
-              {State[key as keyof typeof State]}
-            </option>
-          ))}
+              <option key={key} value={key}>
+                {State[key as keyof typeof State]}
+              </option>
+            ))}
         </select>
       </td>
       <td>
         <p>{props.contact?.createdAt}</p>
       </td>
       <td>
-           {action === "edit" ?           
+        {action === "edit" ?
           <button onClick={handleEdit} className="button">Submit</button> :
           <button onClick={() => setAction("edit")} className="button">Edit</button>}
       </td>
       <td>
-          {action === "delete" ? 
-            <button onClick={handleDelete} className="button deletebtn">Confirm Delete</button> : 
-            <button onClick={() => setAction("delete")} className="button deletebtn">Delete</button>}
+        {action === "delete" ?
+          <button onClick={handleDelete} className="button deletebtn">Confirm Delete</button> :
+          <button onClick={() => setAction("delete")} className="button deletebtn">Delete</button>}
       </td>
     </>
   )
