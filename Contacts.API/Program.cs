@@ -27,13 +27,11 @@ builder.Services.AddLogging();
 builder.Services.AddApplicationInsightsTelemetry();
 
 var app = builder.Build();
-  
+
 app.UseCors(x => x
     .AllowAnyMethod()
     .AllowAnyHeader()
-    .SetIsOriginAllowed(origin => true) // allow any origin 
-    .AllowCredentials());
-
+    .SetIsOriginAllowed(origin => true)); // allow any origin 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

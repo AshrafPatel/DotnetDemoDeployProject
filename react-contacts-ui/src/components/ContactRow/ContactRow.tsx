@@ -1,6 +1,7 @@
 import "./ContactRow.css";
 import React, { useEffect, useState } from 'react';
 import { State } from "../../enums/State.tsx";
+import process from "process";
 
 export default function ContactRow(props: any) { 
   const [action, setAction] = useState<string>("");
@@ -15,9 +16,14 @@ export default function ContactRow(props: any) {
     setState(props.contact?.state);
     setCreatedAt(props.contact?.createdAt);
   }, [props.contact]);
+  
 
   const handleDelete = (e: any) => {
-    fetch('https://localhost:5000/api/contacts/'+ props.contact.id,
+    const API = process.env.VITE_API_URL;
+    console.log(API);
+
+
+    fetch(`${process.env.VITE_API_URL}/api/contacts/${props.contact.id}`,
       { 
         method: 'DELETE', 
         headers: {
@@ -29,8 +35,7 @@ export default function ContactRow(props: any) {
   };
 
   const handleEdit = (e: any) => {
-    if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
-      fetch('https://localhost:5000/api/contacts/'+ props.contact.id,
+    fetch(`${process.env.VITE_API_URL}/api/contacts/${props.contact.id}`,
       { 
         method: 'PUT', 
         headers: {
@@ -43,21 +48,6 @@ export default function ContactRow(props: any) {
           createdAt: createdAt
         })
       })
-    } else {
-      fetch('https://energetic-enthusiasm-production.up.railway.app/api/contacts/'+ props.contact.id,
-      {
-        method: 'PUT', 
-        headers: {
-        "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          email: email,
-          name: name,
-          state: state,
-          createdAt: createdAt
-        })
-      })
-    }
     setAction("get")
   };
 

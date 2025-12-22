@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './NewContactForm.css';
+import process from "process";
 
 interface NewContactFormState {
   contacts: any[];
@@ -41,7 +42,7 @@ class NewContactForm extends Component<{}, NewContactFormState> {
     }
 
     onSubmitHandler = (event: React.FormEvent) => {
-      fetch("https://localhost:5000/api/Contacts", {
+      fetch(`${process.env.VITE_API_URL}/api/Contacts`, {
           method: "post",
           headers: {
               "Content-Type": "application/json"
@@ -51,14 +52,11 @@ class NewContactForm extends Component<{}, NewContactFormState> {
               name: this.state.name
           })
       })
-      fetch('https://localhost:5000/api/Contacts')
-          .then(response => response.json())
-          .then(contacts => this.setState({contacts}));
     }
 
     componentDidMount() {
       try {
-        fetch('https://localhost:5000/api/contacts')
+        fetch(`${process.env.REACT_APP_API_URL}/api/contacts`)
           .then(response => response.json())
           .then(contacts => this.setState({contacts}));
       } catch(e) {

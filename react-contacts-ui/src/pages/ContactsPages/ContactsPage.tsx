@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './ContactsPage.css'
 import ContactRow from '../../components/ContactRow/ContactRow.tsx'
+import process from "process";
 
 export default function ContactsPage() {
     const [contacts, setContacts] = useState<any[]>([]);
@@ -8,7 +9,7 @@ export default function ContactsPage() {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch('https://localhost:5000/api/contacts')
+            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/contacts`);
             if(!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -45,11 +46,11 @@ export default function ContactsPage() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
                     {contacts.map((contact:any) => 
-                        <ContactRow onDelete={() =>getNewContacts(contact.id)} key={contact.id} contact={contact} />
+                        <tr>
+                            <ContactRow onDelete={() =>getNewContacts(contact.id)} key={contact.id} contact={contact} />
+                        </tr>
                     )}
-                </tr>
             </tbody>
         </table>
   )
