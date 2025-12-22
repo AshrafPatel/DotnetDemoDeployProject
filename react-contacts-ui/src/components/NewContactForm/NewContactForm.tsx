@@ -19,7 +19,8 @@ class NewContactForm extends Component<{}, NewContactFormState> {
         isLoading: false,
         form: false,
         name: "",
-        email: ""
+        email: "",
+        text: ""
       }
       this.handleClick = this.handleClick.bind(this);
       this.handleInputChange = this.handleInputChange.bind(this);
@@ -41,16 +42,24 @@ class NewContactForm extends Component<{}, NewContactFormState> {
     }
 
     onSubmitHandler = (event: React.FormEvent) => {
-      fetch(`${import.meta.env.VITE_API_URL}/api/Contacts`, {
-          method: "post",
-          headers: {
+      try {
+        fetch(`${import.meta.env.VITE_API_URL}/api/contacts`,
+          {
+            method: 'POST',
+            headers: {
               "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
+            },
+            body: JSON.stringify({
               email: this.state.email,
               name: this.state.name
+            })
           })
-      })
+        this.setState({text: "Contact created successfully!"})
+      } catch(e) {
+        console.error(e);
+        this.setState({text: "Could not create contact"})
+      }
+      
     }
 
     componentDidMount() {
@@ -73,6 +82,7 @@ class NewContactForm extends Component<{}, NewContactFormState> {
           <label htmlFor="name">Name</label>
           <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange}/>
           <button type="submit" className="myButton" onClick={this.onSubmitHandler}>Create</button>
+          {this.state.text && <p>{this.state.text}</p>}
         </div>
       )
     }
