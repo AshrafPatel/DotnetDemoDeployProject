@@ -56,18 +56,18 @@ This separation ensures:
   
 ## 📂 Project Structure   
 ### Frontend (React)
-src/
- ├─ components/
- │   ├─ ContactRow
- |   ├─ NavBar
- |   └─ NewContactForm
- ├─ pages/
- │   ├─ ContactsPage
- │   └─ NewContactPage
- ├─ enums/
- │   └─ State.ts
- ├─ App.tsx
- └─ main.tsx
+src/  
+ ├─ components/  
+ │   ├─ ContactRow  
+ |   ├─ NavBar  
+ |   └─ NewContactForm  
+ ├─ pages/  
+ │   ├─ ContactsPage  
+ │   └─ NewContactPage  
+ ├─ enums/  
+ │   └─ State.ts  
+ ├─ App.tsx  
+ └─ main.tsx  
   
  ### Frontend (Blazor UI)  
  Services (ContactsApiClient)   
@@ -106,6 +106,7 @@ Understanding of production concerns (CORS, env separation)
 ## 👤 Author
 Ashraf Patel   
 Software Engineer  
+
 
 
 
