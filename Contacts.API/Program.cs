@@ -1,10 +1,9 @@
-
-
 using Contacts.Services;
 using Contacts.Infrastructure;
 using Contacts.Core;
 using Microsoft.Extensions.DependencyInjection;
 using Contacts.Services.Profiles;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +11,24 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddLogging();
-builder.Services.AddControllers();
 builder.Services.AddCors();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+
+            IssuerSigningKey = new Microsoft.IdentityModel.Tokens.SymmetricSecurityKey(
+                System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])
+            )
+        };
+    });
+
 
 builder.Services.AddAutoMapper(cfg => 
     cfg.AddProfile<MapperConfig>()
@@ -22,6 +37,7 @@ builder.Services.AddAutoMapper(cfg =>
 builder.Services.AddInfrastructureServices(builder.Configuration);
 builder.Services.AddBusinessServices();
 builder.Services.AddAuthorization();
+builder.Services.AddControllers();
 
 builder.Services.AddLogging();
 builder.Services.AddApplicationInsightsTelemetry();
@@ -44,7 +60,7 @@ else
     app.UseExceptionHandler("/error");
 }
 
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
