@@ -57,17 +57,17 @@ This separation ensures:
 ## 📂 Project Structure   
 ### Frontend (React)
 src/
- ├─ components/
- │   ├─ ContactRow
- |   ├─ NavBar
- |   └─ NewContactForm
- ├─ pages/
- │   ├─ ContactsPage
- │   └─ NewContactPage
- ├─ enums/
- │   └─ State.ts
- ├─ App.tsx
- └─ main.tsx
+ ├─ components/  
+ │   ├─ ContactRow  
+ |   ├─ NavBar  
+ |   └─ NewContactForm  
+ ├─ pages/  
+ │   ├─ ContactsPage  
+ │   └─ NewContactPage  
+ ├─ enums/  
+ │   └─ State.ts  
+ ├─ App.tsx  
+ └─ main.tsx  
   
  ### Frontend (Blazor UI)  
  Services (ContactsApiClient)   

@@ -12,6 +12,8 @@ namespace Contacts.Services.Profiles
         public MapperConfig()
         {
             CreateMap<Contact, ContactDto>().ReverseMap();
+            CreateMap<User, LoginRequestDto>().ReverseMap();
+            CreateMap<User, RegisterRequestDto>().ReverseMap();
         }
     }
 }

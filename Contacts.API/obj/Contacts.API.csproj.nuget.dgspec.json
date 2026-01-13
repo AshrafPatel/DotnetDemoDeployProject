@@ -236,6 +236,9 @@
             "projectReferences": {
               "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Contacts.Core.csproj": {
                 "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Core\\Contacts.Core.csproj"
+              },
+              "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj": {
+                "projectPath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.Services\\Contacts.Services.csproj"
               }
             }
           }
@@ -356,6 +359,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[16.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.22, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
