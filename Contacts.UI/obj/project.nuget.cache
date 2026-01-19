@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "82eA/6zBDac=",
+  "dgSpecHash": "JqMC/o6ao64=",
   "success": true,
   "projectFilePath": "C:\\Users\\Ashraf Patel\\Desktop\\DotnetDemoDeployProject\\Contacts.UI\\Contacts.UI.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.applicationinsights.perfcountercollector\\2.23.0\\microsoft.applicationinsights.perfcountercollector.2.23.0.nupkg.sha512",
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.applicationinsights.windowsserver\\2.23.0\\microsoft.applicationinsights.windowsserver.2.23.0.nupkg.sha512",
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.applicationinsights.windowsserver.telemetrychannel\\2.23.0\\microsoft.applicationinsights.windowsserver.telemetrychannel.2.23.0.nupkg.sha512",
-    "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.1\\microsoft.aspnetcore.app.internal.assets.10.0.1.nupkg.sha512",
+    "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.2\\microsoft.aspnetcore.app.internal.assets.10.0.2.nupkg.sha512",
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.extensions.logging.applicationinsights\\2.23.0\\microsoft.extensions.logging.applicationinsights.2.23.0.nupkg.sha512",
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
     "C:\\Users\\Ashraf Patel\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
