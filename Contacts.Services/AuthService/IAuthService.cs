@@ -11,6 +11,6 @@ namespace Contacts.Services.AuthService
     {
         Task RegisterUserAsync(RegisterRequestDto registerRequestDto);
         Task CreateJwt(RegisterRequestDto registerRequestDto);
-        Task<LoginResult> LoginUserAsync(LoginRequestDto loginRequestDto);
+        Task<AuthResult> LoginUserAsync(LoginRequestDto loginRequestDto);
     }
 }

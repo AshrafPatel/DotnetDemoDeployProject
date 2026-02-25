@@ -29,19 +29,28 @@ namespace Contacts.Services.AuthService
             
         }
 
-        public Task<LoginResult> LoginUserAsync(LoginRequestDto loginRequestDto)
+        public Task<AuthResult> LoginUserAsync(LoginRequestDto loginRequestDto)
         {
             throw new NotImplementedException();
         }
 
         public async Task RegisterUserAsync(RegisterRequestDto registerRequestDto)
         {
-            var hash = _passwordHasherService.Hash(registerRequestDto.Password, null!);
+            string hash = string.Empty;
+
+            if (registerRequestDto.Password != null)
+                _passwordHasherService.Hash(registerRequestDto.Password, null!);
+
+            if (registerRequestDto.Name == null)
+                throw new ArgumentNullException(nameof(registerRequestDto.Name));
+
+            if (registerRequestDto.Email == null)
+                throw new ArgumentNullException(nameof(registerRequestDto.Email));
 
             if (await _userRespository.GetByEmailAsync(registerRequestDto.Email) != null)
                 throw new DuplicateEmailException(registerRequestDto.Email);
 
-            var user = User.Create(registerRequestDto.Email,hash);
+            var user = User.Create(registerRequestDto.Name, registerRequestDto.Email,hash);
 
             await _userRespository.AddAsync(user);
         }

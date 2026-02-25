@@ -13,7 +13,7 @@ namespace Contacts.UI.Services
             _config = config;
         }
 
-        private string BaseUrl => _config["Api:BaseUrl"];
+        private string BaseUrl => _config["Api:BaseUrl"]!;
 
         public async Task<List<ContactDto>?> GetAllAsync()
         {

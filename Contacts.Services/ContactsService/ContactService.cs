@@ -171,11 +171,15 @@ namespace Contacts.Services.ContactsService
                     _logger.LogWarning("Contact email cannot be empty.");
                     throw new InvalidContactException("Contact email cannot be empty.");
                 }
-                else if (await _contactRepository.IsEmailExists(contactDto.Email)
-                    && originalContact.Email != contactDto.Email)
+                else if (await _contactRepository.IsEmailExists(contactDto.Email))
                 {
                     _logger.LogWarning("A contact with email {ContactEmail} already exists.", contactDto.Email);
                     throw new DuplicateEmailException($"A contact with email {contactDto.Email} already exists.");
+                }
+                else if (originalContact!.Email != contactDto.Email)
+                {
+                    _logger.LogWarning("Email address provided {ProvidedEmail} cannot be changed for contact with original email {OriginalEmail}", originalContact!.Email, contactDto.Email);
+                    throw new InvalidContactException("Email address cannot be changed.");
                 }
                 else 
                 { 

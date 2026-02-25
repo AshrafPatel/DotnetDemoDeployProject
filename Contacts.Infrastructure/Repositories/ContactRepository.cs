@@ -19,9 +19,12 @@ namespace Contacts.Infrastructure.Repositories
 
         public async Task<Contact> AddAsync(Contact contact)
         {
-            ArgumentNullException.ThrowIfNull(contact);
-            contact.Id = Guid.NewGuid();
-            await _contactDbContext.AddAsync(contact);
+            if (contact == null)
+            {
+                throw new ArgumentNullException(nameof(contact)); 
+            }
+            Contact contactCreated = Contact.Create(contact.Id, contact.Email, contact.Name, contact.State);
+            await _contactDbContext.AddAsync(contactCreated);
             await _contactDbContext.SaveChangesAsync();
             _logger.LogInformation("Added new contact with ID {ContactId}", contact.Id);
             return contact;
@@ -75,10 +78,7 @@ namespace Contacts.Infrastructure.Repositories
 
             contactInDb = await _contactDbContext.Contacts.SingleOrDefaultAsync(x => x.Id == id);
             if (contactInDb == null) return null;
-            contactInDb.Name = contact.Name;
-            contactInDb.Email = contact.Email;
-            contactInDb.State = contact.State;
-            contactInDb.CreatedAt = contact.CreatedAt;  
+            contactInDb.Update(contact.Email, contact.Name, contact.State);
 
             await _contactDbContext.SaveChangesAsync();
             _logger.LogInformation("Updated contact with ID {ContactId}", id);

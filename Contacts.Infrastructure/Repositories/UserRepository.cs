@@ -31,9 +31,10 @@ namespace Contacts.Infrastructure.Repositories
                 {
                     throw new ArgumentNullException(nameof(user));
                 }
-                user.Id = Guid.NewGuid();
-                await _contactDbContext.AddAsync(user);
+                User userCreated = User.Create(user.Name!, user.Email!, user.PasswordHash!, user.Role);
+                await _contactDbContext.AddAsync(userCreated);
                 await _contactDbContext.SaveChangesAsync();
+                _logger.LogInformation("Added new user with ID {UserId}", userCreated.Id);
 
             }
             catch (ArgumentNullException ex)
