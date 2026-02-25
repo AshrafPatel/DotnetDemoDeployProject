@@ -1,5 +1,5 @@
-﻿using Contacts.Core.Enums;
-using Contacts.Core.Exceptions;
+﻿using Contacts.Shared.Enums;
+using Contacts.Shared.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -8,15 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace Contacts.Core.Entities
 {
     public class User
     {
         public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-        public string PasswordHash { get; private set; }
+        public string? Name { get; private set; }
+        public string? Email { get; private set; }
+        public string? PasswordHash { get; private set; }
         public UserRole Role { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; set; }
@@ -49,7 +50,28 @@ namespace Contacts.Core.Entities
             );
         }
 
-        public bool IsAdmin() => Role == UserRole.Admin
+        public void Update(string name="", string email="", string passwordHash="")
+        {
+            if (string.IsNullOrWhiteSpace(name) && string.IsNullOrWhiteSpace(email) && string.IsNullOrWhiteSpace(passwordHash))
+                throw new DomainException("At least one field must be provided for update");
+
+            if (string.IsNullOrWhiteSpace(name))
+                name = Name!;
+            if (string.IsNullOrWhiteSpace(email))
+                email = Email!;
+            if (string.IsNullOrWhiteSpace(passwordHash))
+                passwordHash = PasswordHash!;
+
+            ValidateName(name!);
+            ValidateEmail(email!);
+            ValidatePasswordHash(passwordHash!);
+            Name = name;
+            Email = email;
+            PasswordHash = passwordHash;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public bool IsAdmin() => Role == UserRole.Admin;
 
         private static void ValidateName(string name)
         {

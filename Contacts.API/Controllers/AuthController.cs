@@ -49,7 +49,7 @@ namespace Contacts.API.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest request, [FromServices] AppDbContext db)
+        public IActionResult Login([FromBody] LoginRequest request, [FromServices] Conta db)
         {
             var user = db.Users.SingleOrDefault(u =>
                 u.Email == request.Email);
@@ -76,8 +76,8 @@ namespace Contacts.API.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Email, user.Email.ToString()),
+                new Claim(ClaimTypes.Role, user.Role.ToString())
             };
 
             var key = new SymmetricSecurityKey(
