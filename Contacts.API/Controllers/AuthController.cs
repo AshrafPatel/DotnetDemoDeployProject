@@ -1,5 +1,6 @@
 ﻿using Contacts.Core.Entities;
 using Contacts.Services.UserService;
+using Contacts.Shared.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.Data;
@@ -13,6 +14,10 @@ using System.Text;
 
 namespace Contacts.API.Controllers
 {
+    /*
+     *  User logs in → IAuthService.LoginAsync() validates credentials AND generates token (all in one)
+        User accesses their profile → IUserService.GetProfileAsync() (protected route, token already validated by middleware)
+     */
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -27,18 +32,18 @@ namespace Contacts.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+        public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
             try
             {
-                var result = await _userService.RegisterUserAsync(request);
-                if (result.Succeeded)
+                AuthResult registerToken = await  _userService.RegisterUserAsync(request);
+                if (registerToken.Success)
                 {
                     return Ok(new { Message = "User registered successfully." });
                 }
                 else
                 {
-                    return BadRequest(result.Errors);
+                    return BadRequest(registerToken.Error);
                 }
             }
             catch (Exception ex)
@@ -49,9 +54,26 @@ namespace Contacts.API.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest request, [FromServices] Conta db)
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            var user = db.Users.SingleOrDefault(u =>
+            try
+            {
+                AuthResult loginToken = await _userService.LoginUserAsync(request);
+                if (loginToken.Success)
+                {
+                    return Ok(new { Token = loginToken.AccessToken });
+                }
+                else
+                {
+                    return Unauthorized(loginToken.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error occurred during user login.");
+                return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while processing your request.");
+            }
+            /*var user = db.Users.SingleOrDefault(u =>
                 u.Email == request.Email);
 
             if (user == null)
@@ -68,29 +90,7 @@ namespace Contacts.API.Controllers
 
             // ✅ Password correct → issue JWT
             var token = CreateJwt(user);
-            return Ok(new { token });
-        }
-
-        private string CreateJwt(User user)
-        {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Email, user.Email.ToString()),
-                new Claim(ClaimTypes.Role, user.Role.ToString())
-            };
-
-            var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("THIS_IS_A_SUPER_SECRET_KEY_12345"));
-
-            var token = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(15),
-                signingCredentials:
-                    new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return Ok(new { token });*/
         }
     }
 }

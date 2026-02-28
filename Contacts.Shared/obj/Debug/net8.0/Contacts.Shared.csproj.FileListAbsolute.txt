@@ -1,0 +1,12 @@
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\bin\Debug\net8.0\Contacts.Shared.deps.json
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\bin\Debug\net8.0\Contacts.Shared.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\bin\Debug\net8.0\Contacts.Shared.pdb
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.AssemblyInfoInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.AssemblyInfo.cs
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.sourcelink.json
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\refint\Contacts.Shared.dll
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\Contacts.Shared.pdb
+C:\Users\Ashraf Patel\Desktop\DotnetDemoDeployProject\Contacts.Shared\obj\Debug\net8.0\ref\Contacts.Shared.dll

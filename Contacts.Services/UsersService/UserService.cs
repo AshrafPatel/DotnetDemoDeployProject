@@ -2,6 +2,7 @@
 using Contacts.Core.Interfaces;
 using Contacts.Services.Exceptions;
 using Contacts.Services.PasswordHasherService;
+using Contacts.Services.TokenService;
 using Contacts.Shared.DTOs;
 using System;
 using System.Collections.Generic;
@@ -9,18 +10,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contacts.Services.AuthService
+namespace Contacts.Services.UserService
 {
-    public class AuthService : IAuthService
+    public class UserService : IUserService
     {
 
         private readonly IUserRepository _userRespository;
         private readonly IPasswordHasherService _passwordHasherService;
+        private readonly ITokenService _tokenService;
 
-        public AuthService(IUserRepository userRepository, IPasswordHasherService passwordHasher)
+        public UserService(IUserRepository userRepository, IPasswordHasherService passwordHasher, ITokenService tokenService)
         {
             _userRespository = userRepository;
             _passwordHasherService = passwordHasher;
+            _tokenService = tokenService;
         }
 
 
@@ -29,12 +32,12 @@ namespace Contacts.Services.AuthService
             
         }
 
-        public Task<AuthResult> LoginUserAsync(LoginRequestDto loginRequestDto)
+        public async Task<AuthResult> LoginUserAsync(LoginRequestDto loginRequestDto)
         {
             throw new NotImplementedException();
         }
 
-        public async Task RegisterUserAsync(RegisterRequestDto registerRequestDto)
+        public async Task<AuthResult> RegisterUserAsync(RegisterRequestDto registerRequestDto)
         {
             string hash = string.Empty;
 
@@ -53,6 +56,15 @@ namespace Contacts.Services.AuthService
             var user = User.Create(registerRequestDto.Name, registerRequestDto.Email,hash);
 
             await _userRespository.AddAsync(user);
+            UserProfileDto userProfileDto = new UserProfileDto
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Email = user.Email,
+                Role = user.Role.ToString()
+            };
+            var token = _tokenService.GenerateToken(userProfileDto);
+            return new AuthResult { AccessToken = token, Success = true };
         }
     }
 }

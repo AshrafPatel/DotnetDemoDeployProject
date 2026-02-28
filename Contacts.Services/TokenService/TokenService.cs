@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Contacts.Shared.DTOs;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -17,13 +18,13 @@ namespace Contacts.Services.TokenService
         {
             _configuration = configuration;
         }
-        public string GenerateToken(string userId, string email, string role)
+        public string GenerateToken(UserProfileDto userProfileDto)
         {
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, userId),
-                new Claim(JwtRegisteredClaimNames.Email, email),
-                new Claim(ClaimTypes.Role, role),
+                new Claim(JwtRegisteredClaimNames.Sub, userProfileDto.Name),
+                new Claim(JwtRegisteredClaimNames.Email, userProfileDto.Email),
+                new Claim(ClaimTypes.Role, userProfileDto.Role),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 

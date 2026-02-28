@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Contacts.Shared.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Contacts.Services.TokenService
 {
     public interface ITokenService
     {
-        public string GenerateToken(string userId, string email, string role);
+        public string GenerateToken(UserProfileDto userProfileDto);
     }
 }

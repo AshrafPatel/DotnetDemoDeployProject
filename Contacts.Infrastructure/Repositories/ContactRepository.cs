@@ -23,7 +23,7 @@ namespace Contacts.Infrastructure.Repositories
             {
                 throw new ArgumentNullException(nameof(contact)); 
             }
-            Contact contactCreated = Contact.Create(contact.Id, contact.Email, contact.Name, contact.State);
+            Contact contactCreated = Contact.Create(contact.Id, contact.Email, contact.Name, contact.State, DateTime.UtcNow);
             await _contactDbContext.AddAsync(contactCreated);
             await _contactDbContext.SaveChangesAsync();
             _logger.LogInformation("Added new contact with ID {ContactId}", contact.Id);
@@ -78,7 +78,7 @@ namespace Contacts.Infrastructure.Repositories
 
             contactInDb = await _contactDbContext.Contacts.SingleOrDefaultAsync(x => x.Id == id);
             if (contactInDb == null) return null;
-            contactInDb.Update(contact.Email, contact.Name, contact.State);
+            contactInDb.Update(contact.Email, contact.Name, contact.State, DateTime.UtcNow);
 
             await _contactDbContext.SaveChangesAsync();
             _logger.LogInformation("Updated contact with ID {ContactId}", id);
